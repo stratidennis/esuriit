@@ -1,0 +1,286 @@
+/*BODY*/
+
+body {
+    color: rgb(8, 9, 10);
+    /*background-image: url("images/SvnuN4M.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1080px;*/
+    background-image: url("images/backgrounds/mountains1.jpg");
+    background-size: 450px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #086788;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+header img {
+    width: 110px;
+}
+
+/*Welcome*/
+
+.welcome {
+    text-align: center;
+}
+
+.welcome h1 {
+    color: #21424d;
+    font-size: 330%;
+    font-family: 'Coda', cursive, sans-serif;
+}
+
+/*LOGIN BOX/REGISTER BOX*/
+
+.login, .register {
+    background-color: rgba(255, 255, 255);
+    color: white;
+    margin: 30px 30%;
+    padding: 0px 0px;
+}
+
+.log_in, .register_ul {
+    list-style: none;
+}
+
+.login input, .register input {
+    border: solid 3px rgb(8, 103, 136);
+    border-radius: 25px;
+    outline: none;
+    margin: 15px 0px;
+    padding: 7px;
+    width: 90%;
+}
+
+.gender input {
+    position: absolute;
+    left: -100vw;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+}
+
+.gender label {
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    transition: transform .2s;
+}
+
+.gender div {
+    border: solid 3px rgb(8, 103, 136);
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    width: 60px;
+}
+
+
+.male:hover, .female:hover, #male:checked + label, #female:checked + label {
+    background-color: rgb(138, 180, 219);
+    color: white;
+    transform: scale(1.1);
+}
+
+.male:not(:hover), .female:not(:hover), #male:not(:checked) + label, #female:not(:checked) + label {
+    color: black;
+}
+
+.password {
+    -webkit-text-security: disc;
+}
+
+.plogin, .pregister {
+    background-color: rgb(32, 108, 134);
+    border: solid 5px rgb(28, 54, 63);
+    font-family: 'Coda', cursive, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.error {
+    margin-top: -15px;
+    color: #E40066;
+    text-align: center;
+}
+
+.succes {
+    margin-top: -13px;
+    color: #35df54;
+    text-align: center;
+}
+
+.submit {
+    background-color: rgb(32, 108, 134);
+    border: solid 5px rgb(28, 54, 63);
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Coda', cursive, sans-serif;
+    padding: 10px;
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.or {
+    color: rgb(33, 66, 77);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.guest {
+    margin: 30px 30% 30px 30%;
+}
+
+.guest button {
+    background-color: rgb(32, 108, 134);
+    border: solid 5px rgb(28, 54, 63);
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Coda', cursive, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.registeraccount, .loginaccount {
+    color: rgb(33, 66, 77);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.registeraccount a, .loginaccount a {
+    color: rgb(240, 200, 8);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1550px) {
+    .login input, .register input {
+        width: 88%;
+    }
+}
+
+/*@media screen and (min-height: 1366px) {
+    body {
+        height: 1366px;
+    }
+}*/
+
+@media screen and (max-width: 1300px) {
+    .login input, .register input {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .login input, .register input {
+        padding: 4px;
+        width: 84%;
+    }
+    .gender div {
+        font-size: 14px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .welcome h1 {
+        font-size: 260%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .login input, .register input {
+        width: 83%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .login, .register, .guest {
+        margin: 30px 20%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .welcome h1 {
+        font-size: 220%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .login, .register, .guest {
+        margin: 30px 18%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .welcome h1 {
+        font-size: 150%;
+    }
+    .login, .register {
+        margin: 30px 9%;
+    }
+    .login input, .register input {
+        border: solid 2px rgb(8, 103, 136);
+        padding: 2px;
+    }
+    .gender div {
+        border: solid 2px rgb(8, 103, 136);
+        font-size: 13px;
+        padding: 1.5px;
+    }
+    .plogin, .pregister {
+        font-size: 20px;
+    }
+    .error, .succes {
+        font-size: 12px;
+    }
+    .submit {
+        font-size: 15px;
+    }
+    .or {
+        font-size: 13px;
+    }
+    .guest {
+        margin: 30px 9%;
+    }
+    .guest button {
+        font-size: 14px;
+    }
+}
+
+/*@media screen and (max-width: 415px) {
+    body {
+        height: 935px;
+    }
+}*/
+
+@media screen and (max-width: 320px) {
+    .login input, .register input {
+        width: 81%;
+    }
+}

@@ -1,0 +1,183 @@
+/*BODY*/
+
+body {
+    color: rgb(8, 9, 10);
+    background-color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #086788;
+    margin: 0px;
+    padding: 15px;
+}
+
+.header nav {
+    position: relative;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.header li {
+    width: 9.6em;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.home img, .search img, .info img, .network img, .minigames img, .account img, .login img {
+    height: 40px;
+    width: 40px;
+    transition: transform .5s;
+}
+
+.search img:hover, .info img:hover, .network img:hover, .minigames img:hover, .account img:hover, .logout label:hover {
+    cursor: pointer;
+}
+
+.logout button {
+    background: transparent;
+    border: none !important;
+    font-size: 0;
+}
+
+.accountLabel {
+    background-color: rgba(0, 128, 0, 0);
+    border-radius: 50%;
+    padding: 1.6rem 0.1rem 0rem 0.1rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+.dropdown {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.2);
+    color: rgb(87, 87, 87);
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 4px 7px;
+    position: absolute;
+    transform: translate(-25px, 21px);
+    width: 8.1em;
+    z-index: 2;
+}
+
+#toggle:checked~.dropdown {
+    display: block;
+}
+
+.dropdown li {
+    border-radius: 4%;
+    font-size: 16px;
+    margin: 0px auto 0px auto;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform .3s;
+    width: auto;
+}
+
+.dropdown li a {
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1201px) {
+    .dropdown li:hover {
+        background-color: rgb(238, 238, 238);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header li {
+        width: 8em;
+    }
+    .dropdown li {
+        font-size: 14px;
+    }
+    .dropdown li:hover {
+        background-color: rgb(238, 238, 238);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header li {
+        width: 6em;
+    }
+    .dropdown li {
+        font-size: 13px;
+        padding: 10px auto 10px auto;
+        width: 7em;
+    }
+    .dropdown li:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .header li {
+        width: 5em;
+    }
+    .dropdown {
+        transform: translate(-70px, 21px);
+    }
+    .dropdown li {
+        font-size: 12px;
+        width: 7em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header li {
+        width: 3em;
+    }
+    .dropdown li {
+        width: 7em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header li {
+        width: 2.3em;
+    }
+    .home img, .search img, .info img, .network img, .minigames img, .account img, .login img {
+        height: 30px;
+        width: 30px;
+    }
+    .dropdown {
+        transform: translate(-90px, 21px);
+    }
+    .dropdown li {
+        font-size: 12px;
+        padding: 8px auto 8px auto;
+        width: 7em;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .home img:hover, .search img:hover, .info img:hover, .network img:hover, .minigames img:hover, .account img:hover, .login img:hover {
+        transform: scale(1.5);
+    }
+}

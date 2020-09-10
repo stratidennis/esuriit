@@ -1,0 +1,92 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.searchbar {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto 0 auto;
+}
+
+.searchbar, .options {
+    width: 435px;
+}
+
+.searchbar input {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
+.searchbar button {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.searchbar button img {
+    width: 35px;
+}
+
+.options {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto 30px auto;
+}
+
+.eachoption {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    font-family: 'Coda', cursive, sans-serif;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+#byusername:checked+.byusername, #bycontent:checked+.bycontent {
+    background-color: #5DB7DE;
+    color: white;
+}
+
+.eachoption label {
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+.sorry {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 5px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .searchbar, .options {
+        width: 335px;
+    }
+    .searchbar input {
+        width: 300px;
+    }
+    .eachoption {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .searchbar, .options {
+        width: 265px;
+    }
+    .searchbar input {
+        width: 230px;
+    }
+}

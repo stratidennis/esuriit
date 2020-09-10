@@ -1,0 +1,165 @@
+/*COMMENT SECTION*/
+
+.Comment {
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 2px solid #086788;
+    box-shadow: 2px 2px 7px #aaaaaa6c;
+    margin: 50px auto;
+    width: 50%;
+}
+
+/*TOP*/
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.top img {
+    border-radius: 50%;
+    margin: auto 5px;
+    object-fit: cover;
+    height: 45px;
+    width: 45px;
+}
+
+.username {
+    width: 80%;
+}
+
+.date {
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: center;
+    width: 30%;
+}
+
+/*MIDDLE*/
+
+.text {
+    margin: 3px 5% 10px 5%;
+    font-size: 20px;
+}
+
+.image img {
+    margin: 3px 5%;
+    width: 90%;
+}
+
+/*BOTTOM*/
+
+.bottom {
+    background-color: #5DB7DE;
+    margin: 0px;
+    padding: 2px 0px;
+}
+
+.bottom label {
+    cursor: pointer;
+    margin-left: 95%;
+    width: 20px;
+}
+
+.waste {
+    margin-bottom: -3px;
+    width: 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+}
+
+/*END OF COMMENT SECTION*/
+
+@media screen and (max-width:1300px) {
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .date {
+        font-size: 11px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .waste {
+        margin-bottom: -2px;
+        width: 18px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .top img {
+        height: 40px;
+        width: 40px;
+    }
+    .username {
+        font-size: 15px;
+    }
+    .date {
+        font-size: 10px;
+    }
+    .text {
+        font-size: 13px;
+    }
+    .waste {
+        width: 17px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .Comment {
+        width: 65%;
+    }
+    .waste {
+        margin-bottom: -1px;
+        width: 16px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .waste {
+        width: 15px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .Comment {
+        width: 75%;
+    }
+    .top img {
+        height: 35px;
+        width: 35px;
+    }
+    .username {
+        font-size: 13px;
+    }
+    .text {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .date {
+        font-size: 8px;
+    }
+    .waste {
+        margin-bottom: 0px;
+        width: 13px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Comment {
+        width: 85%;
+    }
+}

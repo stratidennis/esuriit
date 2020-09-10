@@ -1,0 +1,183 @@
+/*Here starts the CSS code for the "Add a post" section that allows the user to post on the website*/
+
+.addComment {
+    margin: 20px auto;
+    width: 70%;
+}
+
+/*TOP-ROW*/
+
+.top-row {
+    background-color: #2D3142;
+    color: white;
+    height: 20px;
+}
+
+.addPost {
+    text-align: center;
+    width: 100%;
+}
+
+/*MIDDLE-ROW*/
+
+.middle-row textarea {
+    background-color: #EDE3E4;
+    border: none;
+    outline: none;
+    padding: 0;
+    resize: none;
+    height: 80px;
+    width: 100%;
+}
+
+/*BOTTOM-ROW*/
+
+.bottom-row button {
+    background-color: #2D3142;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin-top: -4px;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    width: 70%;
+}
+
+/*Message section*/
+
+.CommentOwn {
+    background-color: #fffaf0;
+    border: 2px solid #086788;
+    box-shadow: 2px 2px 7px #aaaaaa6c;
+    border-radius: 25px;
+    margin: 50px auto;
+    margin-right: 20px;
+    width: 40%;
+}
+
+.CommentOther {
+    background-color: #f3f3f3;
+    border: 2px solid #104547;
+    box-shadow: 2px 2px 7px #aaaaaa6c;
+    border-radius: 25px;
+    margin: 50px auto;
+    margin-left: 20px;
+    width: 40%;
+}
+
+/*TOP*/
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.top img {
+    border-radius: 50%;
+    margin: auto 5px;
+    object-fit: cover;
+    height: 45px;
+    width: 45px;
+}
+
+.username {
+    width: 80%;
+}
+
+.date {
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: center;
+    width: 30%;
+}
+
+/*MIDDLE*/
+
+.text {
+    margin: 3px 5% 10px 5%;
+    font-size: 20px;
+}
+
+/*END OF COMMENT SECTION*/
+
+/*ERROR*/
+
+.error {
+    color: #E40066;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width:1300px) {
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .date {
+        font-size: 11px;
+    }
+    .text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .top img {
+        height: 40px;
+        width: 40px;
+    }
+    .username {
+        font-size: 15px;
+    }
+    .date {
+        font-size: 10px;
+    }
+    .text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .CommentOwn, .CommentOther {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .CommentOwn, .CommentOther {
+        width: 75%;
+    }
+    .top img {
+        height: 35px;
+        width: 35px;
+    }
+    .username {
+        font-size: 13px;
+    }
+    .text {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .date {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .CommentOwn, .CommentOther {
+        width: 85%;
+    }
+}

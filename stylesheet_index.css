@@ -1,0 +1,181 @@
+.body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*This is the "Order by" button that allows the user to see the posts in a custom order*/
+
+.sorting {
+    position: absolute;
+    margin-left: 25%;
+    margin-bottom: -35px;
+    padding: 0;
+    text-align: center;
+}
+
+.sorting2 {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 25%;
+    padding: 0;
+    text-align: center;
+}
+
+.textSort {
+    color: rgba(80, 80, 80, 0.5);
+    cursor: pointer;
+    margin: 0;
+    font-size: 14px;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -200vw;
+}
+
+.sortDropdown {
+    display: none;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    width: 50px;
+}
+
+#toggleSortDropdown:checked~.sortDropdown {
+    display: block;
+}
+
+.sorting li, .sorting2 li {
+    font-size: 13px;
+}
+
+.sorting li label, .sorting2 li label {
+    cursor: pointer;
+}
+
+.choices {
+    background-color: rgba(223, 223, 223, 0.85);
+}
+
+#latest:checked+label, #oldest:checked+label {
+    color: #5DB7DE;
+}
+
+.sorting ul li input, .sorting2 ul li input {
+    display: none;
+}
+
+.sorting ul li button, .sorting2 ul li button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    bottom: 4px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    position: relative;
+    width: 100%;
+    font-size: 11px;
+}
+
+.submitSort {
+    background-color: #5DB7DE;
+    height: 13px;
+}
+
+/*Here starts the CSS code for the "Add a post" section that allows the user to post on the website*/
+
+.addComment {
+    margin: 20px auto;
+    width: 70%;
+}
+
+/*TOP-ROW*/
+
+.top-row {
+    background-color: #5DB7DE;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+}
+
+.addPost {
+    width: 100%;
+}
+
+.top-row label, .top-row label img {
+    cursor: pointer;
+    width: 20px;
+}
+
+#uploadComPic {
+    position: absolute;
+    left: -100vw;
+}
+
+/*MIDDLE-ROW*/
+
+.middle-row textarea {
+    background-color: floralwhite;
+    border: none;
+    outline: none;
+    padding: 0;
+    resize: none;
+    height: 80px;
+    width: 100%;
+}
+
+/*BOTTOM-ROW*/
+
+.bottom-row button {
+    background-color: #5DB7DE;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin-top: -4px;
+    outline: none;
+    position: absolute;
+    text-align: center;
+    width: 70%;
+}
+
+/*ERROR*/
+
+.error {
+    color: #E40066;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width:650px) {
+    .addComment, .bottom-row button {
+        width: 80%;
+    }
+    .sorting, .sorting2 {
+        margin-left: 17%;
+    }
+    .textSort {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .addComment, .bottom-row button {
+        width: 85%;
+    }
+    .sorting, .sorting2 {
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .addComment, .bottom-row button {
+        width: 93%;
+    }
+    .sorting, .sorting2 {
+        margin-left: 7%;
+    }
+}

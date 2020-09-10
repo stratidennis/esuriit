@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #21424d;
+    font-family: 'Coda', cursive, sans-serif;
+    font-size: 250%;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.password {
+    margin: auto;
+    margin-top: 10%;
+    width: 400px;
+}
+
+.info {
+    margin: 7px auto;
+    color: rgba(0, 0, 0, 0.295);
+    font-size: 13px;
+    text-align: center;
+}
+
+.password form {
+    display: flex;
+    flex-direction: column;
+}
+
+.password form input {
+    border: solid 3px rgb(8, 103, 136);
+    border-radius: 25px;
+    margin: auto;
+    outline: none;
+    padding: 7px;
+    width: 70%;
+}
+
+.password form button {
+    background-color: #5DB7DE;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px auto auto auto;
+    outline: none;
+    width: 40%;
+}
+
+.notlogedin {
+    margin: 200px auto;
+    text-align: center;
+}
+
+.notlogedin a {
+    color: rgb(240, 200, 8);
+    text-decoration: none;
+}
+
+.error {
+    color: #E40066;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 220%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 150%;
+    }
+    .password {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 120%;
+    }
+    .password {
+        width: 300px;
+    }
+    .info {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1 {
+        font-size: 100%;
+    }
+    .password {
+        width: 270px;
+    }
+}
