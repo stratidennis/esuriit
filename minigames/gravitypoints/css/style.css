@@ -1,0 +1,33 @@
+body {
+    font-family: Helvetica sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    color: #eee;
+    font-size: 17px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.info a {
+    color: rgb(240, 200, 8);
+    text-decoration: none;
+}
