@@ -15,3 +15,5 @@ As a power user:
 - *the password for the power users page is 'Copilul1', but it can be changed by altering the code (either way, only users that are marked as admins in  the database, are able to access the page).
 
 There is also a search page that allows any user to search post either by the username or by post content.
+
+This web app is hosted at: https://hungryesuriit.000webhostapp.com/ .
