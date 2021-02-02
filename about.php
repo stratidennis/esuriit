@@ -22,11 +22,11 @@ require 'header.php';
         </p>
         <p>
             Credits: </br>
-            -help from <a href="https://www.facebook.com/grada.silviu" target="_blank">@Silviu Grada</a> in designing the header icons; </br>
+            -help from <a href="https://www.linkedin.com/in/silviu-grada-53a0471b9/" target="_blank">@Silviu Grada</a> in designing the header icons; </br>
             -the Gravity Points minigame was built and designed by <a href="https://codepen.io/akm2/pen/rHIsa" target="_blank">@Akimitsu Hamamuro</a>.
         </p>
         <p>
-            You can contact the developer of this webiste at <a>des.thicklayers@gmail.com</a>.
+            You can contact the developer of this webiste at <a>dennis.stratinski2001@gmail.com</a>.
         </p>
 
     </body>
